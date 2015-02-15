@@ -1,10 +1,13 @@
+PDF_FILES = competition.pdf in-schools.pdf kickstart.pdf \
+              tech-day-soton.pdf
+
 .SUFFIXES: .pdf .tex
 
 # How to convert a .tex into a .pdf
 .tex.pdf:
 	pdflatex $<
 
-all: competition.pdf tech-day-soton.pdf kickstart.pdf in-schools.pdf
+all: $(PDF_FILES)
 
 competition.pdf: assessment-guidance.tex
 
@@ -20,4 +23,4 @@ tidy:
 	-rm -f `cat .gitignore | grep -v pdf`
 
 clean: tidy
-	-rm -f competition.pdf tech-day-soton.pdf kickstart.pdf in-schools.pdf
+	-rm -f $(PDF_FILES)
