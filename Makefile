@@ -1,4 +1,4 @@
-PDF_FILES = competition.pdf in-schools.pdf kickstart.pdf \
+PDF_FILES = competition.pdf in-schools.pdf kickstart-soton.pdf \
               tech-day-soton.pdf
 
 .SUFFIXES: .pdf .tex
@@ -12,8 +12,6 @@ all: $(PDF_FILES)
 competition.pdf: assessment-guidance.tex
 
 tech-day-soton.pdf: assessment-guidance.tex
-
-kickstart.pdf: assessment-guidance.tex
 
 in-schools.pdf: in-schools.tex
 
