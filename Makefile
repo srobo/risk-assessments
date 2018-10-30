@@ -1,5 +1,5 @@
-PDF_FILES = competition.pdf in-schools.pdf kickstart-soton.pdf \
-              tech-day-soton.pdf
+PDF_FILES = competition.pdf in-schools.pdf kickstart-london.pdf \
+              kickstart-soton.pdf tech-day-soton.pdf
 
 .SUFFIXES: .pdf .tex
 
