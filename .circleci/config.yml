@@ -7,4 +7,17 @@ jobs:
             - checkout
             - run: make
             - store_artifacts:
-                path: *.pdf
+                path: competition.pdf
+                destination: competition.pdf
+            - store_artifacts:
+                path: in-schools.pdf
+                destination: in-schools.pdf
+            - store_artifacts:
+                path: kickstart-london.pdf
+                destination: kickstart-london.pdf
+            - store_artifacts:
+                path: kickstart-soton.pdf
+                destination: kickstart-soton.pdf
+            - store_artifacts:
+                path: tech-day-soton.pdf
+                destination: tech-day-soton.pdf
