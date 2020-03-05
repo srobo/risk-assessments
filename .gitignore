@@ -2,3 +2,7 @@
 *.log
 *.out
 *.pdf
+*/*.aux
+*/*.log
+*/*.out
+*/*.pdf
