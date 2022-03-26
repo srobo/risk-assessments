@@ -13,9 +13,9 @@ all: $(PDF_FILES)
 
 competition: competition/competition.pdf competition/setup.pdf competition/teardown.pdf
 
-competition/competition.pdf: assessment-guidance.tex
-competition/setup.pdf: assessment-guidance.tex
-competition/teardown.pdf: assessment-guidance.tex
+competition/competition.pdf: assessment-guidance.tex covid.tex
+competition/setup.pdf: assessment-guidance.tex covid.tex
+competition/teardown.pdf: assessment-guidance.tex covid.tex
 
 techdays/tech-day-soton.pdf: assessment-guidance.tex
 
