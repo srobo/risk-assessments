@@ -3,6 +3,7 @@
 \usepackage[final]{pdfpages}
 \usepackage[colorlinks]{hyperref}
 \usepackage{longtable}
+\usepackage{makecell}
 \title{Student Robotics Risk Assessment Form}
 
 \begin{document}
@@ -21,8 +22,11 @@
 \end{description}
 \clearpage
 
+\renewcommand{\cellalign}{tl}
+\renewcommand{\theadalign}{tl}
+
 \newcommand{\risk}[4]{
- #1 & #2 & #3 & #4 \\
+	#1 & #2 & #3 & #4 \\
 }
 
 \begin{landscape}
@@ -42,87 +46,141 @@ $L \times S$) can be found in the final section.
 \endfoot
 
 \risk{Injury while using manual or power tools}
-{
-Tools should only be used in appropriate circumstances and in the manner they are designed to be used.
-All use should be supervised by a responsible adult.
-First aid provision available to manage any incidents - provided by the means of SUSU staff and appropriately trained SR Volunteers.}
-{Health and Safety Lead}
+{\makecell{
+Tools should only be used in appropriate \\
+	circumstances and in the manner they are\\
+	designed to be used.\\
+All use should be supervised by a\\
+	responsible adult.\\
+No loose clothing to be worn whilst\\
+	operating power tools.\\
+First aid provision available to manage any\\
+	incidents - provided by the means of SUSU\\
+	staff and appropriately trained\\
+	SR Volunteers.\\
+}}
+{\makecell{
+Health and Safety Lead\\
+}}
 {4}
 \hline
 
 \risk{Injury due to persons or objects falling from height}
-{
-Work at height only conducted by suitably prepared individuals.
-Personnel clipped on where appropriate.
-Tools on lanyards where appropriate.
-Head protection to be worn.
-Area of worked barriered off.
-}
-{Health and Safety Lead}
+{\makecell{
+Work at height only conducted by suitably\\
+	prepared individuals.\\
+Personnel clipped on where appropriate.\\
+Tools on lanyards where appropriate.\\
+Head protection to be worn.\\
+Area of worked barriered off.\\
+}}
+{\makecell{
+Health and Safety Lead\\
+}}
 {3}
 \hline
 
 \risk{Accidents due to fatigue from working long hours}
-{
-Individuals suspected of excessive tiredness restricted from activities that may be consequently dangerous.
-Opportunity and space for breaks readily available.
-}
-{Health and Safety Lead}
+{\makecell{
+Individuals suspected of excessive tiredness\\
+	restricted from activities that may be\\
+	consequently dangerous.\\
+Opportunity and space for breaks readily\\
+	available.\\
+}}
+{\makecell{
+Health and Safety Lead\\
+}}
 {3}
 \hline
 
 \risk{Injury from improper manual handling}
-{
-Individuals involved in manual handling trained and briefed.
-Appropriate protective equipment provided, if applicable.
-}
-{Health and Safety Lead}
+{\makecell{
+Individuals involved in manual handling\\
+	trained and briefed.\\
+Appropriate protective equipment provided,\\
+	if applicable.\\
+}}
+{\makecell{
+Health and Safety Lead\\
+}}
 {3}
 \hline
 
 \risk{Trip Hazard from trailing extension leads}
-{Extension leads taped down and inspected regularly, kept away from walkways
-where reasonably practicable. Blueshirts and Team Leaders to enforce teams
-keeping within their areas and that areas are kept tidy}
-{Health and Safety Lead, Team Leaders}
+{\makecell{
+Extension leads taped down and inspected\\
+	regularly, kept away from walkways where\\
+	reasonably practicable.\\
+}}
+{\makecell{
+Health and Safety Lead\\
+}}
 {1}
 \hline
 
 \risk{Falling on stairs}
-{
-Carrying of large or heavy objects on the stairs to be kept to a minimum. Running on the stairs is not permitted.
-}
-{Health and Safety Lead}
+{\makecell{
+Carrying of large or heavy objects\\
+	on the stairs to be kept to a minimum.\\
+Running on the stairs is not permitted.\\
+}}
+{\makecell{
+Health and Safety Lead\\
+}}
 {2}
 \hline
 
 \risk{Injury due to objects falling from arena / arena components coming loose}
-{
-Arena to be constructed and tested as per Method Statement, and will
-be subject to inspection by SR Volunteers throughout the event, with
-interventions for repair if deemed necessary.
-}
-{Health and Safety Lead}
+{\makecell{
+Arena to be constructed and tested as per\\
+	Method Statement, and will be subject to\\
+	inspection by SR Volunteers throughout the\\
+	event, with interventions for repair if deemed\\
+	necessary.\\
+}}
+{\makecell{
+Health and Safety Lead\\
+}}
 {3}
 \hline
 
 \risk{Hearing damage from excessive noise levels}
-{Noise levels carefully monitored during event.}
-{Health and Safety Lead}
+{\makecell{
+Noise levels carefully monitored during event.\\
+}}
+{\makecell{
+Health and Safety Lead\\
+}}
 {2}
 \hline
 
 \risk{Reaction to theatrical effects utilised, such as lighting effects}
-{Theatrical effects will be limited to testing functionality.
-Anyone present that may be affected by the test will be notified before the test to give them chance to ensure they are not at risk.
-Flashing lights kept to a minimum. Any flashing to be at no greater rate than 4 flashes per second.}
-{Health and Safety Lead}
+{\makecell{
+Theatrical effects will be limited to testing\\
+	functionality.\\
+Anyone present that may be affected by the\\
+	test will be notified before the test to give\\
+	them chance to ensure they are not at risk.\\
+Flashing lights kept to a minimum.\\
+Any flashing to be at no greater rate than\\
+	4 flashes per second.\\
+}}
+{\makecell{
+Health and Safety Lead\\
+}}
 {4}
 \hline
 
 \risk{Accidents due to being under the influence of alcohol or drugs}
-{Alcohol consumption prohibited on site. Anyone clearly under the influence will be escorted off site.}
-{Health and Safety Lead}
+{\makecell{
+Alcohol consumption prohibited on site.\\
+Anyone clearly under the influence will be\\
+	escorted off site.\\
+}}
+{\makecell{
+Health and Safety Lead\\
+}}
 {2}
 \hline
 

@@ -13,7 +13,7 @@ all: $(PDF_FILES)
 
 competition: competition/competition.pdf competition/setup.pdf competition/teardown.pdf
 
-competition/competition.pdf: assessment-guidance.tex covid.tex
+competition/competition.pdf: assessment-guidance.tex covid.tex traffic-management.tex
 competition/setup.pdf: assessment-guidance.tex covid.tex
 competition/teardown.pdf: assessment-guidance.tex covid.tex
 
