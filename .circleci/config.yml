@@ -7,23 +7,23 @@ jobs:
             - checkout
             - run: make
             - store_artifacts:
-                path: competition.pdf
-                destination: competition/competition.pdf
+                path: competition/competition.pdf
+                destination: competition.pdf
             - store_artifacts:
-                path: competition_setup.pdf
-                destination: competition/setup.pdf
+                path: competition/setup.pdf
+                destination: competition_setup.pdf
             - store_artifacts:
-                path: competition_teardown.pdf
-                destination: competition/teardown.pdf
+                path: competition/teardown.pdf
+                destination: competition_teardown.pdf
             - store_artifacts:
                 path: in-schools.pdf
                 destination: in-schools.pdf
             - store_artifacts:
-                path: kickstart-london.pdf
-                destination: kickstart/kickstart-london.pdf
+                path: kickstart/kickstart-london.pdf
+                destination: kickstart-london.pdf
             - store_artifacts:
-                path: kickstart-soton.pdf
-                destination: kickstart/kickstart-soton.pdf
+                path: kickstart/kickstart-soton.pdf
+                destination: kickstart-soton.pdf
             - store_artifacts:
-                path: tech-day-soton.pdf
-                destination: techdays/tech-day-soton.pdf
+                path: techdays/tech-day-soton.pdf
+                destination: tech-day-soton.pdf
