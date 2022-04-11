@@ -1,17 +1,23 @@
-PDF_FILES = competition.pdf in-schools.pdf kickstart-london.pdf \
-              kickstart-soton.pdf tech-day-soton.pdf
+PDF_FILES = competition/competition.pdf in-schools.pdf \
+              competition/setup.pdf competition/teardown.pdf \
+	      kickstart/kickstart-london.pdf kickstart/kickstart-soton.pdf \
+	      techdays/tech-day-soton.pdf
 
 .SUFFIXES: .pdf .tex
 
 # How to convert a .tex into a .pdf
 .tex.pdf:
-	pdflatex $<
+	pdflatex -output-directory $(dir $<) $<
 
 all: $(PDF_FILES)
 
-competition.pdf: assessment-guidance.tex
+competition: competition/competition.pdf competition/setup.pdf competition/teardown.pdf
 
-tech-day-soton.pdf: assessment-guidance.tex
+competition/competition.pdf: assessment-guidance.tex covid.tex traffic-management.tex
+competition/setup.pdf: assessment-guidance.tex covid.tex
+competition/teardown.pdf: assessment-guidance.tex covid.tex
+
+techdays/tech-day-soton.pdf: assessment-guidance.tex
 
 in-schools.pdf: in-schools.tex
 
